@@ -23,8 +23,14 @@ icrawler
 【アノテーションツール】
 labelImg
 
-【作業内容】
+【採用アルゴリズム】
+backbone：MovileNetv3
+head：SSD
+
+【作業内容】  
 ① icrawlerを用いて「male」「female」の画像データをスクレイピング（計730枚ほど）  
 ② labelImgを用いてPaccal Voc形式でアノテーション  
-③ アノテーションデータをtfrecord形式に変換  
-④ 
+③ アノテーションデータをtfrecord形式に学習  
+④ OpenCVでWebカメラから映像を入力しGPUを使用して推論
+
+
