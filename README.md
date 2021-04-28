@@ -24,7 +24,7 @@ icrawler
 labelImg
 
 【作業内容】
-① icrawlerを用いて「male」「female」の画像データをスクレイピング（計730枚ほど）
-② labelImgを用いてPaccal Voc形式でアノテーション
-③ アノテーションデータをtfrecord形式に変換
+① icrawlerを用いて「male」「female」の画像データをスクレイピング（計730枚ほど）\n
+② labelImgを用いてPaccal Voc形式でアノテーション\n
+③ アノテーションデータをtfrecord形式に変換\n
 ④ 
