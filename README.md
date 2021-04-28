@@ -1,31 +1,31 @@
-## 顔検出・性別判定アルゴリズム
+## 顔検出・性別判定アルゴリズム  
 
-【概要】
+【概要】  
 Webカメラの入力から顔検出・性別判定を行う
 
-【学習環境】
-- ハードウェア
+【学習環境】  
+- ハードウェア  
 CPU：intel core i7  
 GPU：Geforce GTX 1650
 
-- ミドルウェア
+- ミドルウェア  
 CUDA：v10.1
 
-- フレームワーク
+- フレームワーク  
 Tensorflow-gpu 1.14.0
 
-【使用ライブラリ】
-Flask
-OpenCV
-numpy
-icrawler
+【使用ライブラリ】  
+Flask  
+OpenCV  
+numpy  
+icrawler  
 
-【アノテーションツール】
-labelImg
+【アノテーションツール】  
+labelImg  
 
-【採用アルゴリズム】
-backbone：MovileNetv3
-head：SSD
+【採用アルゴリズム】  
+backbone：MovileNetv3  
+head：SSD  
 
 【作業内容】  
 ① icrawlerを用いて「male」「female」の画像データをスクレイピング（計730枚ほど）  
