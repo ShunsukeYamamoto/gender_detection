@@ -5,7 +5,7 @@ Webカメラの入力から顔検出・性別判定を行う
 
 【学習環境】
 - ハードウェア
-CPU：intel core i7　
+CPU：intel core i7  
 GPU：Geforce GTX 1650
 
 - ミドルウェア
