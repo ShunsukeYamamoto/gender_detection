@@ -52,7 +52,7 @@ def main():
     boxes, scores, genders = inference(img, sess, image_tensor, detection_boxes, detection_scores, detection_classes)
 
     for i,box in enumerate(boxes):
-      if scores[i] > 0.6:
+      if scores[i] > 0.8:
         ymin, xmin, ymax, xmax = rectangle_cordinate(img, box)
         if genders[i] == 1.0:
           color = (255,0,0)
