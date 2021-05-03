@@ -1,6 +1,8 @@
-const constraints = window.constraints = {
+const constraints =window.constraints = {
   audio: false,
-  video: true
+  video: {
+    facingMode: "user"
+  }
 }
 
 async function init(){
@@ -10,14 +12,10 @@ async function init(){
     const videoTracks = stream.getVideoTracks();
     window.stream = stream;
     video.srcObject = stream;
-    // e.target.disabled = true;
   }
   catch{
     alert("カメラ使用を許可して下さい");
   }
 }
 
-console.log(constraints)
-// document.querySelector("#showVideo").addEventListener("click",e => init(e));
-window.onload = init
-console.log("window loaded")
+window.onload = init;
