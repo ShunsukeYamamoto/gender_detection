@@ -33,19 +33,14 @@ head：SSD
 ③ アノテーションデータをtfrecord形式に学習  
 ④ OpenCVでWebカメラから映像を入力しGPUを使用して推論  
 
-## デモ動画(4/27現在)
+## デモ動画(5/6現在)
+https://user-images.githubusercontent.com/59650988/117405542-c4d81880-af46-11eb-9a94-fa898fbee4e9.mp4
 
-[](url)
-
-https://user-images.githubusercontent.com/59650988/116398642-fe33c880-a862-11eb-81d8-0cb7c9467368.mp4  
-
-※青BBOX=男性、赤BBOX=女性
+※青BBOX=男性、赤BBOX=女性  
 
 ### 改善点
-- 女性BBOXと男性BBOXが同時に検出されてしまっている→他クラスNMSで対策します  
-- 検知範囲が最大5m→顔が小さめな学習データを投入して改善を狙います
+- 検知範囲が最大5m→顔が小さめな学習データを投入して改善を狙います  
 
 ### 今後やりたいこと（4/27現在）
 - Jetson Nanoにデプロイ  
 - 推論モデルをTensorRTに変換してCUDA上で実行  
-- WebRTCを使ってクライアントのWebカメラで推論、Webブラウザで結果表示  

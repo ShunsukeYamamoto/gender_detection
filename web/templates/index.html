@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+   <meta charset="utf-8">
+   <title>顔検出、性別判定</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <p>videoタグ</p>
+    <video id="video" autoplay playsinline muted></video>
+    <p>imgタグ</p>
+    <img id="detect" style="width: 640; height: 480;">
+    <p>canvusタグ</p>
+    <canvas id="canvas"></canvas>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="static/js/get_frame.js"></script>
+    <script type="text/javascript" src="static/js/send_server.js"></script>
+  </body>
+</html>
